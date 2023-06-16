@@ -53,25 +53,15 @@ namespace Aula07Jogos
             void jogo2
           {
                 Random sorteador1 = new Random();
-                int numero1;
-                int numero2;
-                int numero3;
-                int numero4;
+
                 int sorteio1 = sorteador1.Next(1, 9);
+                
 
 
 
                 Console.WriteLine("Chegue até 21\n");
-                Console.WriteLine("Digite o número:");
-                numero1 = int.Parse(Console.ReadLine());
-                Console.WriteLine("\n");
-                Console.WriteLine("Digite outro:");
-                numero2 = int.Parse(Console.ReadLine());
-                Console.WriteLine("\n");
-                Console.WriteLine("Digite outro:");
-                numero3 = int.Parse(Console.ReadLine());
-                Console.WriteLine("Quer continuar? Se sim digite outro número:");
-                numero4 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Quer continuar?");
+              
 
                 if(numero1+numero2+numero3+numero4 > 21 || numero1+numero2+numero3+numero4 < 21)
                 {
